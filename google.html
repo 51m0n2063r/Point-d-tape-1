@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Médiathèque simplon</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna.js@1.4/dna.css>
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons">home</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="google.html">Nos Google Books</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="google.html">Nos Google Books</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Médiathèque simplon</h1>
+		</div>
+	</div>
+      <main>
+   <h1>Nos Google books</h1>
+   <label>
+      Recherche:
+      <input data-smart-update=findBooks placeholder="By Google" autofocus>
+   </label>
+   <section class=books>
+      <div id=book class=dna-template>
+         <img src=~~volumeInfo.imageLinks.thumbnail~~ alt=cover>
+         <div>
+            <h2>~~volumeInfo.title~~</h2>
+            <p>~~volumeInfo.publisher~~</p>
+			 <p>~~volumeInfo.description~~</p>
+            <i>~~saleInfo.listPrice.amount~~</i>
+         </div>
+      </div>
+   </section>
+</main>
+
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.3/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/dna.js@1.4/dna.min.js></script>
+<script>
+   function findBooks(elem) {
+      var terms = elem.val();
+      console.log(terms);
+      var url = 'https://www.googleapis.com/books/v1/volumes?q=' + terms;
+      function handleResults(data) {
+         dna.clone('book', data.items, { empty: true, fade: true });
+         }
+      $.getJSON(url, handleResults);
+      }
+</script>
+
+    <footer>
+       
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
