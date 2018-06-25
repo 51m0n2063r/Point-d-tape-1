@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="FR">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>médiathèque simplon</title>
+    <title>Médiathèque simplon</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,28 +28,54 @@
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br><br>
-            <h1 class="header center orange-text">médiathèque simplon</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-            <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-            </div>
-            <br><br>
-
+            <h1 class="header center orange-text">Médiathèque simplon</h1>
+        <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/library.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Un lieu de vie convivial et un environement de travail!</h3>
+          <h5 class="light grey-text text-lighten-3">partager l'amour de la culture.</h5>
         </div>
-    </div>
+      </li>
+      <li>
+        <img src="img/old-books.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Une sélection d'ancien livres.</h3>
+          <h5 class="light grey-text text-lighten-3">Parcourez l'histoire.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/library-dvd.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Des envies du film</h3>
+          <h5 class="light grey-text text-lighten-3">Choisisez parmi une large sélection.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/vinyl-records.jpg"> 
+        <div class="caption center-align">
+          <h3>Viver la musique autrement!</h3>
+          <h5 class="light grey-text text-lighten-3">Un large choix de vinyle et CD.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
+    </div>
+    
+    <canvas id="canvas" style="position:fixed; top:0; left:0; z-index:-1; width: 100%" width="514" height="616"></canvas>
 
     <div class="container">
         <div class="section">
+
 
             <!--   Icon Section   -->
             <div class="row">
                 <form class="col s6 m6">
                     <div class="row">
                         <div class="input-field col s6">
-                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                            <input id="first_name" type="text" class="validate">
                             <label for="first_name">Prénom</label>
                         </div>
                         <div class="input-field col s6">
@@ -58,8 +85,8 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                            <label for="disabled">Disabled</label>
+                            <input type="text" class="datepicker">
+                            <label for="disabled">Date de naissance</label>
                         </div>
                     </div>
                     <div class="row">
@@ -133,4 +160,5 @@
     <script src="js/init.js"></script>
 
 </body>
+
 </html>
