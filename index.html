@@ -2,155 +2,161 @@
 <html lang="FR">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Médiathèque simplon</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Médiathèque simplon</title>
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons">home</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="google.html">Nos Google Books</a></li>
-            </ul>
+	<nav class="light-blue lighten-1" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons">home</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="google.html">Nos Google Books</a></li>
+			</ul>
 
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="google.html">Nos Google Books</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-    <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-            <br><br>
-            <h1 class="header center orange-text">Médiathèque simplon</h1>
+			<ul id="nav-mobile" class="sidenav">
+				<li><a href="google.html">Nos Google Books</a></li>
+			</ul>
+			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		</div>
-		
-        <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="img/library.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>Un lieu de vie convivial et un environement de travail!</h3>
-          <h5 class="light grey-text text-lighten-3">partager l'amour de la culture.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="img/old-books.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Une sélection d'ancien livres.</h3>
-          <h5 class="light grey-text text-lighten-3">Parcourez l'histoire.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="img/library-dvd.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Des envies du film</h3>
-          <h5 class="light grey-text text-lighten-3">Choisisez parmi une large sélection.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="img/vinyl-records.jpg"> 
-        <div class="caption center-align">
-          <h3>Viver la musique autrement!</h3>
-          <h5 class="light grey-text text-lighten-3">Un large choix de vinyle et CD.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+	</nav>
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br><br>
+			<h1 class="header center orange-text">Médiathèque simplon</h1>
+		</div>
 
-    </div>
-    
-    <canvas id="canvas" style="position:fixed; top:0; left:0; z-index:-1; width: 100%" width="514" height="616"></canvas>
+		<div class="slider">
+			<ul class="slides">
+				<li>
+					<img src="img/library.jpg">
+					<!-- random image -->
+					<div class="caption center-align">
+						<h3>Un lieu de vie convivial et un environement de travail!</h3>
+						<h5 class="light grey-text text-lighten-3">partager l'amour de la culture.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/old-books.jpg">
+					<!-- random image -->
+					<div class="caption left-align">
+						<h3>Une sélection d'ancien livres.</h3>
+						<h5 class="light grey-text text-lighten-3">Parcourez l'histoire.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/library-dvd.jpg">
+					<!-- random image -->
+					<div class="caption right-align">
+						<h3>Des envies du film</h3>
+						<h5 class="light grey-text text-lighten-3">Choisisez parmi une large sélection.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/vinyl-records.jpg">
+					<div class="caption center-align">
+						<h3>Viver la musique autrement!</h3>
+						<h5 class="light grey-text text-lighten-3">Un large choix de vinyle et CD.</h5>
+					</div>
+				</li>
+			</ul>
+		</div>
 
-    <div class="container">
-        <div class="section">
+	</div>
 
+	<canvas id="canvas" style="position:fixed; top:0; left:0; z-index:-1; width: 100%" width="514" height="616"></canvas>
 
-            <!--   Icon Section   -->
-            <div class="row">
-                <form class="col s6 m6">
-                    
-    
-                    <h3>Inscription</h3>
-                    
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
-                            <label for="first_name">Prénom</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name">Nom</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input type="text" class="datepicker">
-                            <label for="disabled">Date de naissance</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="password" type="password" class="validate">
-                            <label for="password">Mot de passe</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <br><br>
-    </div>
-        
-
-    <footer class="page-footer orange">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Enoncé</h5>
-                    <p class="grey-text text-lighten-4">A vous de réaliser un site pour une médiathèque. Celui-ci doit servir de catalogue mais aussi permettre la réservation de documents et le suivi des emprunts.</p>
+	<div class="container">
+		<div class="section">
 
 
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Création</h5>
-                    <ul>
-                        <li><a class="white-text" href="https://github.com/51m0n2063r/Point-d-tape-1">Git-hub</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Formation</h5>
-                    <ul>
-                        <li><a class="white-text" href="https://simplon.co">simplon</a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-            </div>
-        </div>
-    </footer>
+			<!--   Icon Section   -->
+			<div class="row">
+				<form class="col s6 m6">
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+					<h3>Inscription</h3>
+
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate">
+							<label for="first_name">Prénom</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="last_name">Nom</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="text" class="datepicker">
+							<label for="disabled">Date de naissance</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="password" type="password" class="validate">
+							<label for="password">Mot de passe</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+					</div>
+					<div class="input-field col s12">
+						<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<br><br>
+	</div>
+
+
+	<footer class="page-footer orange">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Enoncé</h5>
+					<p class="grey-text text-lighten-4">A vous de réaliser un site pour une médiathèque. Celui-ci doit servir de catalogue mais aussi permettre la réservation de documents et le suivi des emprunts.</p>
+
+
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Création</h5>
+					<ul>
+						<li><a class="white-text" href="https://github.com/51m0n2063r/Point-d-tape-1">Git-hub</a></li>
+
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Formation</h5>
+					<ul>
+						<li><a class="white-text" href="https://simplon.co">simplon</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
 
 </body>
 
